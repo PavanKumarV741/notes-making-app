@@ -21,6 +21,9 @@ const AddNote = ({ handleAddNote }) => {
             setheading('')
 			setNoteText('');
 		}
+		else if(noteText.length === 0 || heading.length === 0   ){
+			alert("notes should not be empty")
+		}
 	};
 
 	return (
